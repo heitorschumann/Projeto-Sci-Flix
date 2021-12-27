@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Avalors";
+  src: url("../font/Avalors.otf");
+}
+
+@font-face {
+  font-family: "Roblox Black Round";
+  src: url("../font/Roblox\ Black\ Round.otf");
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../img/bg/bg-principal.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+a,
+input,
+button,
+a:active,
+a:visited,
+a:focus,
+a:link,
+button:active,
+button:visited,
+button:focus,
+button:target,
+.btn:active,
+.btn:focus,
+.btn:target,
+.navbar-toggler:focus,
+.nav-link,
+.btn:visited {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  outline-style: none;
+}
+
+.navbar-header {
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  width: 250px;
+  height: 42px;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  display: block;
+  margin: 5px 0;
+  position: relative;
+}
+
+.nav-link,
+p.h1,
+p.display2,
+.preco,
+.preco span,
+.mes,
+p.h6,
+p.h4,
+a,
+.telefone span,
+.lingua {
+  font-family: "Montserrat";
+  font-style: normal;
+  color: #ffffff;
+}
+
+.telefone,
+.assinar,
+p.h5,
+p.h2,
+.principal {
+  font-family: "Avalors";
+  font-style: normal;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0px 10px 0px 10px;
+}
+
+.nav-link:hover {
+  color: #ff00f4;
+}
+
+.botao-header .btn {
+  border: 5px solid #c900f4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Roblox Black Round";
+  font-style: bolder;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  margin: 0px 0px 0px 20px;
+}
+
+.botao-header .btn:hover {
+  border: 5px solid #ffffff;
+  color: #ff00f4;
+  margin: 0px 0px 0px 20px;
+}
+
+p.h1 {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 80px;
+  padding: 0px 20px;
+}
+
+p.display2 {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  padding: 3px;
+}
+
+.principal {
+  background: #c900f4;
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #21004b;
+}
+
+.principal:hover {
+  color: #ffffff;
+}
+
+.desktop {
+  height: 360px;
+  width: auto;
+  margin: 5px;
+}
+
+p.h2 {
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ff00f4;
+}
+
+.retangulo {
+  margin: 50px 30px;
+  padding: 20px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 13px 19px rgba(0, 0, 0, 0.07));
+  border-radius: 10px;
+}
+
+p.h3 {
+  font-family: "Roblox Black Round";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 20px;
+  padding: 20px;
+  letter-spacing: 0.1px;
+  color: #ff00f4;
+  text-align: center;
+}
+
+p.h4 {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ff00f4;
+  padding: 20px 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.esquerda,
+.direita {
+  margin-left: 0 3%;
+  width: 2rem;
+  cursor: pointer;
+  color: #ff00f4;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+}
+
+.box {
+  width: 12rem;
+  height: 20rem;
+  box-shadow: 0px 0px 2rem 0px #ff00f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box:nth-child(2n) {
+  transform: scale(0.85);
+  z-index: -1;
+}
+
+.box:nth-child(2) {
+  left: 5%;
+}
+
+.box:nth-child(4) {
+  left: -5%;
+}
+
+.box:nth-child(4n + 1) {
+  transform: scale(0.75);
+  z-index: -2;
+}
+
+.box:nth-child(1) {
+  left: 15%;
+}
+
+.box:nth-child(5) {
+  left: -15%;
+}
+
+.card__text-content {
+  text-align: center;
+  width: 75%;
+}
+
+.card__title {
+  padding: 1rem;
+}
+
+.box--hide {
+  display: none;
+}
+
+.move-out-from-left {
+  animation: moveOutLeft 0.5s ease-in-out;
+}
+
+.move-out-from-right {
+  animation: moveOutRight 0.5s ease-in-out;
+}
+
+.move-to-position5-from-left {
+  animation: moveToP5Left 0.5s ease-in-out;
+}
+
+.move-to-position4-from-left {
+  animation: moveToP4Left 0.5s ease-in-out;
+}
+
+.move-to-position3-from-left {
+  animation: moveToP3Left 0.5s ease-in-out;
+}
+
+.move-to-position2-from-left {
+  animation: moveToP2Left 0.5s ease-in-out;
+}
+
+.move-to-position1-from-left {
+  animation: moveToP1Left 0.5s ease-in-out;
+}
+
+.move-to-position5-from-right {
+  animation: moveToP5Right 0.5s ease-in-out;
+}
+.move-to-position4-from-right {
+  animation: moveToP4Right 0.5s ease-in-out;
+}
+.move-to-position3-from-right {
+  animation: moveToP3Right 0.5s ease-in-out;
+}
+.move-to-position2-from-right {
+  animation: moveToP2Right 0.5s ease-in-out;
+}
+.move-to-position1-from-right {
+  animation: moveToP1Right 0.5s ease-in-out;
+}
+
+@keyframes moveOutLeft {
+  0% {
+    transform: scale(0.75) translateX(0%);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5) translateX(-150%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.25) translateX(0%);
+    opacity: 0;
+  }
+}
+
+@keyframes moveOutRight {
+  0% {
+    transform: scale(0.75) translateX(0%);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5) translateX(150%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.25) translateX(0%);
+    opacity: 0;
+  }
+}
+
+@keyframes moveToP5Left {
+  from {
+    transform: scale(0.75) translateX(100%);
+  }
+  to {
+    transform: scale(0.75) translateX(0);
+  }
+}
+
+@keyframes moveToP4Left {
+  from {
+    transform: scale(0.75) translateX(100%);
+  }
+  to {
+    transform: scale(0.85) translateX(0);
+  }
+}
+
+@keyframes moveToP3Left {
+  from {
+    transform: scale(0.85) translateX(100%);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes moveToP2Left {
+  from {
+    transform: scale(1) translateX(100%);
+  }
+  to {
+    transform: scale(0.85) translateX(0);
+  }
+}
+
+@keyframes moveToP1Left {
+  from {
+    transform: scale(0.85) translateX(100%);
+  }
+  to {
+    transform: scale(0.75) translateX(0);
+  }
+}
+
+@keyframes moveToP1Right {
+  from {
+    transform: scale(0.75) translateX(-100%);
+  }
+  to {
+    transform: scale(0.75) translateX(0);
+  }
+}
+
+@keyframes moveToP2Right {
+  from {
+    transform: scale(0.75) translateX(-100%);
+  }
+  to {
+    transform: scale(0.85) translateX(0);
+  }
+}
+
+@keyframes moveToP3Right {
+  from {
+    transform: scale(0.85) translateX(-100%);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes moveToP4Right {
+  from {
+    transform: scale(1) translateX(-100%);
+  }
+  to {
+    transform: scale(0.85) translateX(0);
+  }
+}
+
+@keyframes moveToP5Right {
+  from {
+    transform: scale(0.85) translateX(-100%);
+  }
+  to {
+    transform: scale(0.75) translateX(0);
+  }
+}
+
+.botao-de-busca {
+  border: 5px solid #c900f4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Roblox Black Round";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.standart,
+.premium,
+.diamond {
+  margin: 50px 0px;
+  padding: 40px;
+  border: 3px solid #ff00f4;
+  box-sizing: border-box;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+.standart {
+  background: linear-gradient(23.76deg, #21004b 16.35%, #001dab 85.64%);
+}
+
+.premium {
+  background: linear-gradient(23.76deg, #001dab 16.35%, #6f00ff 84.05%);
+}
+
+.diamond {
+  background: linear-gradient(23.76deg, #001dab 16.35%, #c900ff 85.64%);
+}
+
+p.h5 {
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+}
+
+.preco {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  margin: 50px 0px 0px 0px;
+  text-align: center;
+}
+
+.preco span {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+}
+
+.mes {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  padding: 0px 0px 30px 100px;
+}
+
+p.h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  padding: 15px 10px 20px 10px;
+}
+
+.assinar {
+  padding: 18px 38px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #ff00f4;
+}
+
+.assinar:hover {
+  color: #ffffff;
+  border: 2px solid #ff00f4;
+}
+
+.telefone {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+  color: #ff00f4;
+  padding: 20px 95px;
+}
+
+.telefone span {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 23px;
+  color: #ff00f4;
+}
+
+a,
+.lingua {
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  line-height: 23px;
+}
+
+.lingua {
+  margin: 20px 0px;
+  padding: 10px;
+  border: 3px solid #ff00f4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 23px;
+}
+
+ul a:hover {
+  color: #c900f4;
+}
+
+a svg:hover {
+  color: #ff00f4;
+}
