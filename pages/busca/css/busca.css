@@ -1,0 +1,49 @@
+article{
+    width: 100vw;
+    height: 80vh;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+#title{
+    height: fit-content;
+    width: fit-content;
+}
+
+#poster{
+    min-width: fit-content;
+    min-height: fit-content;
+    height: 65vh;
+    width: 20vw;
+}
+
+.size{
+    height: fit-content;
+    font-family: 'Avalors';
+    color: rgb(255, 255, 255);
+}
+
+#mainInfo{
+    width: 50vw;
+}
+
+#info{
+    width: 50vw;
+    text-align: center;
+}
+
+.sizeP{
+    height: fit-content; 
+    font-family: var(--bs-body-font-family);
+    color: rgb(255, 255, 255);
+}
+
+
+@media(max-width: 900px){
+    article{
+        height: 100vh;
+        margin: 250px auto;
+        flex-wrap: nowrap;
+    }
+
+
+}
