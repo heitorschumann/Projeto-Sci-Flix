@@ -1,3 +1,8 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
 article{
     width: 100vw;
     height: 80vh;
@@ -7,6 +12,7 @@ article{
 #title{
     height: fit-content;
     width: fit-content;
+    text-align: center;
 }
 
 #poster{
@@ -24,11 +30,14 @@ article{
 
 #mainInfo{
     width: 50vw;
+    height: 65vh;
 }
 
 #info{
-    width: 50vw;
-    text-align: center;
+    width: 45vw;
+    text-align: left;
+    margin: 10px;
+    height: 65vh;
 }
 
 .sizeP{
@@ -38,12 +47,66 @@ article{
 }
 
 
-@media(max-width: 900px){
-    article{
-        height: 100vh;
-        margin: 250px auto;
-        flex-wrap: nowrap;
+
+@media(max-width: 1200px){
+    header{
+        margin: 0 0 50px 0 ;
     }
 
+    footer{
+        margin: 50px 0 0 0 ;
+    }
 
+}
+
+@media(max-width: 800px){
+    header{
+        margin: 0 0 250px 0 ;
+    }
+
+    footer{
+        margin: 250px 0 0 0 ;
+    }
+
+    article{
+        flex-wrap: nowrap;
+        height: 140vh;
+    }
+
+    #mainInfo{
+        margin: 0 0 150px 0;
+    }
+
+    #info{
+        margin: 100px 0 200px 0;
+    }
+   
+}
+
+@media(max-width: 500px){
+    article{
+        height: 160vh;
+    }
+
+    #mainInfo{
+        margin: 0 0 200px 0;
+    }
+
+    #info{
+        margin: 150px 0 200px 0;
+    }
+}
+
+@media(max-width: 400px){
+    article{
+        height: 200vh;
+    }
+
+    #mainInfo{
+        margin: 0 0 200px 0;
+    }
+
+    #info{
+        margin: 300px 0 350px 0;
+    }
 }
