@@ -11,7 +11,7 @@ function abrePoster() {
     "tt0118884", // Contact;
     "tt0113243", // Hackers;
     "tt0246578", // Donnie Darko;
-    "tt0087803", // 1984;
+    "tt0094625", // Akira;
   ];
 
   filmes.forEach(function (filme, i) {
