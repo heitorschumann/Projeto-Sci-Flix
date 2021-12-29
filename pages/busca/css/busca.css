@@ -1,3 +1,8 @@
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
 body{
     height: 100vh;
     width: 100vw;
@@ -61,19 +66,21 @@ article{
     color: rgb(255, 255, 255);
 }
 
+li { list-style-type: none; }
+
 
 @media(max-width: 1400px){
 
     header{
-        margin: 0 0 100px 0 ;
+        margin-bottom: 5rem;
     }
 
     footer{
-        margin: 180px 0 0 0 ;
+        margin-top: 15rem;
     }
 
     #mainInfo{
-        margin-bottom: 300px;
+        margin-bottom: 22rem;
     }
     
 }
@@ -84,57 +91,80 @@ article{
     }
 
     #mainInfo{
-        margin-bottom: 400px;
+        margin-bottom: 25rem;
+    }
+}
+
+@media(max-width: 1100px){
+    #mainInfo{
+        margin-bottom: 30rem;
+    }
+
+    footer{
+        margin-top: 20rem;
     }
 }
 
 
-
 @media(max-width: 900px){
+    article{
+        height: 220vh;
+    }
+
     header{
-        margin-bottom: 100px;
+        margin-bottom: 7rem;
     }
 
     footer{
-        margin-top: 300px;
+        margin-top: 20rem;
     }
 
     #mainInfo{
-        margin: 0 auto 450px auto;
+        margin-bottom: 32rem;
     }
 
+}
+
+@media(max-width: 793px){
+    #mainInfo{
+        margin-bottom: 35rem;
+    }
+
+    footer{
+        margin-top: 25rem;
+    }
 }
 
 @media(max-width: 730px){
     footer{
-        margin-top: 500px;
+        margin-top: 28rem;
     }
     #mainInfo{
-        margin-bottom: 550px;
+        margin-bottom: 37rem;
     }
 
 }
 
 @media(max-width: 650px){
     footer{
-        margin-top: 600px;
+        margin-top: 33rem;
     }
     #mainInfo{
-        margin-bottom: 650px;
+        margin-bottom: 40rem;
     }
 }
 
 @media(max-width: 560px){
     header{
-        margin-bottom: 200px;
+        margin-bottom: 10rem;
     }
 
     #mainInfo{
-        margin-bottom: 750px;
+        margin-bottom: 45rem;
     }
 
     footer{
-        margin-top: 750px;
+        margin-top: 40rem;
     }
     .sizeP{
         width: fit-content;
@@ -145,10 +175,39 @@ article{
 @media(max-width: 505px){
 
     #mainInfo{
-        margin-bottom: 850px;
+        margin-bottom: 45rem;
     }
 
     footer{
-        margin-top: 900px;
+        margin-top: 45rem;
+    }
+}
+
+@media(max-width: 485px){
+    header{
+        margin-bottom: 10rem;
+    }
+
+    #mainInfo{
+        margin-bottom: 50rem;
+    }
+
+    footer{
+        margin-top: 50rem;
+    }
+    
+}
+
+@media(max-width: 400px){
+    header{
+        margin-bottom: 18rem;
+    }
+    
+    #mainInfo{
+        margin-bottom: 58rem;
+    }
+
+    footer{
+        margin-top: 60rem;
     }
 }
