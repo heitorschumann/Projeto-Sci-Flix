@@ -1,4 +1,4 @@
-const movie = 'tt0246578';
+const movie = 'tt0246578'; // Donnie Darko;
 const title = document.querySelector('#title');
 const poster = document.querySelector('#poster');
 const year = document.querySelector('#year');
@@ -17,14 +17,14 @@ function getInfo(movie){
         success: function (response) {
             title.innerText = response.Title,
             poster.setAttribute('src', response.Poster),
-            year.innerText = `ano: ${response.Year}`,
-            rating.innerText = `classificação: ${response.Rated}`,
-            runtime.innerText = `duração: ${response.Runtime}`,
-            genre.innerText = `gênero: ${response.Genre}`, 
-            director.innerText = `diretor(a): ${response.Director}`, 
-            writer.innerText = `roteiro: ${response.Writer}`, 
-            cast.innerText = `elenco: ${response.Actors}`, 
-            plot.innerText = `sinopse: ${response.Plot}`;
+            year.innerText = `Year: ${response.Year}`,
+            rating.innerText = `Rated: ${response.Rated}`,
+            runtime.innerText = `Runtime: ${response.Runtime}`,
+            genre.innerText = `Genre: ${response.Genre}`, 
+            director.innerText = `Director: ${response.Director}`, 
+            writer.innerText = `Writer: ${response.Writer}`, 
+            cast.innerText = `Cast: ${response.Actors}`, 
+            plot.innerText = `Plot: ${response.Plot}`;
         },
     })
 }
