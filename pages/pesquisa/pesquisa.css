@@ -1,0 +1,75 @@
+section {
+  height: 630px;
+}
+
+span,
+h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #ffffff;
+}
+
+span {
+  font-size: 30px;
+  display: block;
+  text-align: center;
+}
+h1 {
+  display: block;
+  text-align: center;
+  padding-top: 60px;
+}
+
+#btn-search {
+  border-radius: 5px;
+  background-color: #c900f4;
+  border: none;
+  font-size: 20px;
+}
+
+#btn-search:hover {
+  background-color: #ffffff;
+  color: #c900f4;
+}
+.telefone {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+  color: rgb(255, 0, 244);
+  padding: 19px 180px;
+}
+#no-movie {
+  display: none;
+}
+
+#movies-card {
+  width: 45%;
+  float: left;
+  display: grid;
+  margin: 30px;
+  grid-template-columns: auto auto;
+  grid-column-gap: 0;
+  background: linear-gradient(23.76deg, #21004b 16.35%, #001dab 85.64%);
+  color: #ffffff;
+}
+
+.poster-movie {
+  width: 40%;
+  float: left;
+}
+
+.movie {
+  text-align: left;
+  padding: 2%;
+}
+h1 {
+  color: #ffffff;
+  display: block;
+  text-align: start;
+}
+
+.card-right-info ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
