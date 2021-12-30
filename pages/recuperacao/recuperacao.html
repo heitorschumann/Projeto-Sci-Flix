@@ -58,13 +58,21 @@
 
             <form>
                 <label class="label">Informe aqui o e-mail cadastrado:</label><br>
-                <input type="email" id="usuario" placeholder="Digite seu e-mail aqui..."><br>
+                <div id="div-email">
+                  <input type="email" id="usuario" placeholder="Digite seu e-mail aqui...">
+
+                  <h6 id="texto-email"></h6><br>
+                </div>
 
                 <label class="label">Informe aqui sua nova senha:</label><br>
                 <input type="password" id="senha" placeholder="Digite sua nova senha aqui..."><br>
 
                 <label class="label">Confirme a nova senha:</label><br>
-                <input type="password" id="senha2" placeholder="Confirme sua nova senha aqui..."><br>
+                <div id="div-confirmacao">
+                  <input type="password" id="senha2" placeholder="Confirme sua nova senha aqui..."><br>
+
+                  <h6 id="texto-confirmacao"></h6><br>
+                </div>
 
                 <a href="#">
                     <button class="btn" id="botao-recuperacao">Alterar senha</button>
@@ -192,5 +200,7 @@
 
     <!--JS do Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--JS interno-->
+    <script src="/Projeto-Sci-Flix/pages/recuperacao/javascript-recuperacao/recuperacao.js"></script>
 </body>
 </html>

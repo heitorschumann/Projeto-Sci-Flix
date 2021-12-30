@@ -104,6 +104,24 @@
         color: #c900f4;
     }
 
+    #div-email {
+        display: flex;
+        align-items: center;
+    }
+
+    #texto-email {
+        margin-left: 20px;
+    }
+
+    #div-confirmacao {
+        display: flex;
+        align-items: center;
+    }
+
+    #texto-confirmacao {
+        margin-left: 20px;
+    }
+
     .label {
         font-size: large;
     }

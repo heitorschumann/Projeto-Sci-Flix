@@ -157,6 +157,15 @@
         text-decoration: underline;
         color:rgb(69, 1, 109);
     }
+
+    #cadastro-link {
+        color: #8c52b3;
+    }
+
+    #cadastro-link:hover {
+        text-decoration: underline;
+        color:rgb(69, 1, 109);
+    }
 /* fim da formatação da section login */
 
 /* início da formatação do footer */
