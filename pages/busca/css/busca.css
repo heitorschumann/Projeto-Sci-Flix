@@ -11,7 +11,7 @@ body{
 article{
     width: 100vw;
     height: 180vh;
-    margin: 50px auto;
+    margin: 120px auto;
     flex-wrap: nowrap;
 }
 #title{
@@ -40,13 +40,13 @@ article{
 #mainInfo{
     width: 50vw;
     height: 65vh;
-    margin: 0 0 250px 0;
+    margin: 0 0 300px 0;
 }
 
 #info{
     width: 45vw;
     text-align: left;
-    margin: 10px auto;
+    margin: 40px auto;
     height: 65vh;
     padding: 2rem;
     
@@ -72,15 +72,15 @@ li { list-style-type: none; }
 @media(max-width: 1400px){
 
     header{
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
     }
 
     footer{
-        margin-top: 15rem;
+        margin-top: 20rem;
     }
 
     #mainInfo{
-        margin-bottom: 22rem;
+        margin-bottom: 25rem;
     }
     
 }
