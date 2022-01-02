@@ -12,50 +12,50 @@ const item10 = document.querySelector('#item-10');
 const item11 = document.querySelector('#item-11');
 
 item0.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-0.html'
+    window.location.href = './pages/busca/busca-0.html'
 });
 
 item1.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-1.html'
+    window.location.href = './pages/busca/busca-1.html'
 });
 
 item2.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-2.html'
+    window.location.href = '../pages/busca/busca-2.html'
 });
 
 item3.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-3.html'
+    window.location.href = './pages/busca/busca-3.html'
 });
 
 item4.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-4.html'
+    window.location.href = './pages/busca/busca-4.html'
 });
 
 item5.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-5.html'
+    window.location.href = './pages/busca/busca-5.html'
 });
 
 item6.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-6.html'
+    window.location.href = './pages/busca/busca-6.html'
 });
 
 item7.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-7.html'
+    window.location.href = './pages/busca/busca-7.html'
 });
 
 item8.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-8.html'
+    window.location.href = './pages/busca/busca-8.html'
 });
 
 item9.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-9.html'
+    window.location.href = './pages/busca/busca-9.html'
 });
 
 item10.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-10.html'
+    window.location.href = './pages/busca/busca-10.html'
 });
 
 item11.addEventListener('click', function(){
-    window.location.href = '../../pages/busca/busca-11.html'
+    window.location.href = './pages/busca/busca-11.html'
 });
 
