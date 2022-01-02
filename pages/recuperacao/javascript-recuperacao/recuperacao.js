@@ -21,7 +21,7 @@
             if(SenhaCadastrada.value === ConfirmacaoSenha.value && SenhaCadastrada.value != "") {
                 setTimeout( function (clicaAlert ) {
                      alert( "Senha alterada com sucesso" );
-                     this.addEventListener.clicaAlert.onclick = window.location.href = "/Projeto-Sci-Flix/index.html";
+                     this.addEventListener.clicaAlert.onclick = window.location.href = "/index.html";
                     }, 1000 );
             }
         } else {

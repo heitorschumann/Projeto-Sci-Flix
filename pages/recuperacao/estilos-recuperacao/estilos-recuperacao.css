@@ -3,12 +3,12 @@
 
     @font-face {
         font-family: "Avalors";
-        src: url("/Projeto-Sci-Flix/pages/login/font/Avalors.otf");
+        src: url("/pages/recuperacao/font/Avalors.otf");
     }
 
     @font-face {
         font-family: "Roblox Black Round";
-        src: url("/Projeto-Sci-Flix/pages/login/font/Roblox\ Black\ Round.otf");
+        src: url("/pages/recuperacao/font/Roblox\ Black\ Round.otf");
     }
 
     html, body {
@@ -24,7 +24,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-image: url(/Projeto-Sci-Flix/pages/login/imagens-login/bg-principal.png);
+        background-image: url(/pages/recuperacao/imagens-recuperacao/bg-principal.png);
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
