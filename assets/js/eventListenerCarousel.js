@@ -20,7 +20,7 @@ item1.addEventListener('click', function(){
 });
 
 item2.addEventListener('click', function(){
-    window.location.href = '../pages/busca/busca-2.html'
+    window.location.href = './pages/busca/busca-2.html'
 });
 
 item3.addEventListener('click', function(){
