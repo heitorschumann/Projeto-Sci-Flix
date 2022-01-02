@@ -16,7 +16,7 @@ function abrePoster() {
 
   filmes.forEach(function (filme, i) {
     $.ajax({
-      url: `http://www.omdbapi.com/?i=${filme}&apikey=25db0718`,
+      url: `https://www.omdbapi.com/?i=${filme}&apikey=25db0718`,
       type: "GET",
       success: function (response) {
         $(`#item-${i}`).attr("src", response.Poster);
