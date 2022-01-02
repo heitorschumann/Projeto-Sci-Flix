@@ -2,7 +2,7 @@ $('#btn-search').click(function (event) {
   event.preventDefault()
   const text = $('#input-text').val()
   $.get(
-    `http://www.omdbapi.com/?apikey=f969e5ed&s=${text}&plot=full&r=json`,
+    `https://www.omdbapi.com/?apikey=f969e5ed&s=${text}&plot=full&r=json`,
     function (data) {
       if (data && data.Search) {
         $('#no-movie').hide()
