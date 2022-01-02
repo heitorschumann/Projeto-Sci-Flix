@@ -12,6 +12,7 @@ const plot = document.querySelector('#plot');
 
 function getInfo(movie){
     $.ajax({
+        
         url: `https://www.omdbapi.com/?i=${movie}&apikey=c24a091a`,
         type: "GET",
         success: function (response) {
