@@ -48,16 +48,17 @@ button:target,
 .btn:target,
 .navbar-toggler:focus,
 .nav-link,
-.btn:visited {
+.btn:visited,
+li {
   text-decoration: none;
   outline: none;
   box-shadow: none;
   outline-style: none;
+  list-style-type: none;
 }
 
 .navbar-header {
   width: 100%;
-  padding: 20px;
 }
 
 .logo {
@@ -71,12 +72,11 @@ button:target,
   background-color: #ffffff;
   display: block;
   margin: 5px 0;
-  position: relative;
 }
 
 .nav-link,
 p.h1,
-p.display2,
+p.display-2,
 .preco,
 .preco span,
 .mes,
@@ -102,7 +102,6 @@ p.h2,
 .nav-link {
   text-transform: uppercase;
   font-weight: 500;
-  margin: 0px 10px 0px 10px;
 }
 
 .nav-link:hover {
@@ -116,43 +115,34 @@ p.h2,
   font-family: "Roblox Black Round";
   font-style: bolder;
   font-weight: 900;
-  font-size: 23px;
-  line-height: 23px;
+  font-size: 150%;
+  line-height: 100%;
   text-align: center;
-  letter-spacing: 0.1px;
   color: #ffffff;
-  margin: 0px 0px 0px 20px;
 }
 
+#botao-de-busca:hover,
 .botao-header .btn:hover {
   border: 5px solid #ffffff;
   color: #ff00f4;
-  margin: 0px 0px 0px 20px;
 }
 
 p.h1 {
   font-weight: 600;
-  font-size: 60px;
-  line-height: 80px;
-  padding: 0px 20px;
+  font-size: 400%;
 }
 
-p.display2 {
+p.display-2 {
   font-weight: 500;
-  font-size: 27px;
-  line-height: 33px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  padding: 3px;
+  font-size: 200%;
 }
 
 .principal {
   background: #c900f4;
   border-radius: 10px;
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 150%;
+  line-height: 150%;
   text-align: center;
-  letter-spacing: 0.1px;
   color: #21004b;
 }
 
@@ -161,48 +151,36 @@ p.display2 {
 }
 
 .desktop {
-  height: 360px;
-  width: auto;
-  margin: 5px;
+  width: 45%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    width: auto;
+    height: auto;
+  }
 }
 
 p.h2 {
-  font-size: 35px;
-  line-height: 50px;
-  text-align: center;
-  letter-spacing: 0.2px;
   color: #ff00f4;
 }
 
 .retangulo {
-  margin: 50px 30px;
-  padding: 20px;
-  border: 3px solid #ffffff;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 13px 19px rgba(0, 0, 0, 0.07));
+  width: 235px;
+  height: 355px;
+  border: 3px solid #c900f4;
   border-radius: 10px;
 }
 
 p.h3 {
   font-family: "Roblox Black Round";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 20px;
-  padding: 20px;
-  letter-spacing: 0.1px;
-  color: #ff00f4;
-  text-align: center;
 }
 
 p.h4 {
-  font-weight: 500;
   font-size: 17px;
   line-height: 23px;
-  text-align: center;
   letter-spacing: 1px;
-  color: #ff00f4;
-  padding: 20px 0px;
 }
 
 .container {
@@ -211,10 +189,7 @@ p.h4 {
   align-items: center;
 }
 
-.esquerda,
-.direita {
-  margin-left: 0 3%;
-  width: 2rem;
+.setinha {
   cursor: pointer;
   color: #ff00f4;
 }
@@ -229,17 +204,36 @@ p.h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25rem;
+  height: 400px;
 }
 
 .box {
-  width: 12rem;
-  height: 20rem;
-  box-shadow: 0px 0px 2rem 0px #ff00f4;
+  width: 192px;
+  height: 320px;
+  box-shadow: 0px 0px 32px 0px #ff00f4;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .cards__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+
+  .box {
+    width: 144px;
+    height: 240px;
+    box-shadow: 0px 0px 32px 0px #ff00f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
 }
 
 .box:nth-child(2n) {
@@ -266,15 +260,6 @@ p.h4 {
 
 .box:nth-child(5) {
   left: -15%;
-}
-
-.card__text-content {
-  text-align: center;
-  width: 75%;
-}
-
-.card__title {
-  padding: 1rem;
 }
 
 .box--hide {
@@ -445,34 +430,30 @@ p.h4 {
   }
 }
 
-.botao-de-busca {
+#botao-de-busca {
   border: 5px solid #c900f4;
-  box-sizing: border-box;
   border-radius: 10px;
   font-family: "Roblox Black Round";
-  font-style: normal;
   font-weight: 900;
   font-size: 25px;
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.1px;
   background-color: transparent;
-}
-
-input::placeholder {
   color: #ffffff;
 }
 
 .standart,
 .premium,
 .diamond {
-  margin: 50px 0px;
-  padding: 40px;
+  margin: 30px 30px;
+  padding: 30px;
   border: 3px solid #ff00f4;
-  box-sizing: border-box;
-  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
+  height: 611px;
+  width: 340px;
 }
+
 .standart {
   background: linear-gradient(23.76deg, #21004b 16.35%, #001dab 85.64%);
 }
@@ -486,7 +467,6 @@ input::placeholder {
 }
 
 p.h5 {
-  font-weight: normal;
   font-size: 35px;
   line-height: 36px;
   letter-spacing: 0.1px;
@@ -531,7 +511,6 @@ p.h6 {
   box-sizing: border-box;
   border-radius: 10px;
   text-align: center;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.2px;
@@ -548,7 +527,6 @@ p.h6 {
   font-size: 13px;
   line-height: 23px;
   color: #ff00f4;
-  padding: 20px 95px;
 }
 
 .telefone span {
@@ -556,6 +534,10 @@ p.h6 {
   font-size: 21px;
   line-height: 23px;
   color: #ff00f4;
+}
+
+.bi-globe {
+  margin: 2px 10px 0px 0px;
 }
 
 a,
