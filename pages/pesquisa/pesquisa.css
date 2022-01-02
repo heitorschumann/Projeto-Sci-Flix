@@ -73,3 +73,33 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 600px) {
+  .card-right-info ul {
+    display: block;
+  }
+  #movies-card {
+    width: 90%;
+    display: block;
+  }
+  .movie {
+    padding: 0;
+  }
+  .poster-movie {
+    width: 100%;
+    padding: 7px;
+  }
+  #btn-search,
+  #btn-search:hover {
+    padding: unset;
+  }
+  #movies-list {
+    justify-content: unset !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  #movies-card {
+    width: 100%;
+  }
+}
