@@ -217,6 +217,10 @@ p.h4 {
   position: relative;
 }
 
+.box:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .cards__container {
     display: flex;
