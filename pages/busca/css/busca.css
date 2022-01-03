@@ -37,6 +37,11 @@ article{
     color: rgb(255, 255, 255);
 }
 
+main {
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+
 #mainInfo{
     width: 50vw;
     height: 65vh;
@@ -49,8 +54,8 @@ article{
     margin: 40px auto;
     height: 65vh;
     padding: 2rem;
-    
     color: #fff;
+    margin-top: 5%;
 }
 
 #info p{
