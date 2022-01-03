@@ -1,7 +1,7 @@
 Trabalho de encerramento do Módulo 2 da Turma 10 da Resília.
 
 Site feito pelos seguintes integrantes:
-- Fernanda:\ 
+- Fernanda: 
     Linkedin: https://www.linkedin.com/in/fernanda-soares/ 
     Github: https://github.com/fernandasoaress
 
