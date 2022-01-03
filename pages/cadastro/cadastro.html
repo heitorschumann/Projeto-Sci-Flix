@@ -56,34 +56,36 @@
                     <div class="col-10 inputP">
                         <label for="nomeUser" class="form-label">Primeiro Nome</label>
                         <input type="text" class="form-control " id="nomeUser" placeholder="Nome" required />
-                        
+
                     </div>
                     <div class="col-10 inputP">
                         <label for="sobrenomeUser" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control " id="sobrenomeUser" placeholder="Sobrenome"
-                            required />
-                        
+                        <input type="text" class="form-control " id="sobrenomeUser" placeholder="Sobrenome" required />
+
                     </div>
                     <div class="col-10 inputP">
                         <label for="emailUser" class="form-label">Email</label>
-                        <input type="email" id="emailUser" class="form-control" id="emailUser" placeholder="usuario@email.com" onchange="validaEmail(this.value)">
-                        
+                        <input type="email" id="emailUser" class="form-control" id="emailUser"
+                            placeholder="usuario@email.com" onchange="validaEmail(this.value)">
+
                     </div>
                     <div class="col-10 inputP">
                         <label for="senhaUser" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="senhaUser"  onchange="validaSenha(this.value)">
+                        <input type="password" class="form-control" id="senhaUser" onchange="validaSenha(this.value)">
                         <div class="invalid-feedback">
-                            Sua senha precisa conter: 8 a 20 caracteres, caracteres maiúsculos e minúsculos, caracteres especiais e pelo menos um número.
+                            Sua senha precisa conter: 8 a 20 caracteres, caracteres maiúsculos e minúsculos, caracteres
+                            especiais e pelo menos um número.
                         </div>
                     </div>
                     <div class="col-10 inputP">
                         <label for="senhaCheck" class="form-label">Confirme sua senha</label>
-                        <input type="password" class="form-control" id="senhaCheck" onchange="validaSenhaCheck(this.value)">
+                        <input type="password" class="form-control" id="senhaCheck"
+                            onchange="validaSenhaCheck(this.value)">
                         <div class="invalid-feedback">
                             As senhas não são iguais, por favor digite novamente.
                         </div>
                     </div>
-                   
+
                     <div class="adress d-flex align-content-start flex-wrap">
                         <div class="col-10 d-flex flex-column inputP">
                             <label for="rg" class="form-label">RG</label>
@@ -92,13 +94,16 @@
                         <div class="col-8 d-flex flex-column inputP">
                             <label for="cep" class="form-label">CEP</label>
                             <div class="form-inline">
-                                <input type="text" class="form-control" id="cep" placeholder="000000-000"> 
+                                <input type="text" class="form-control" id="cep" placeholder="000000000">
+                                <div class="invalid-feedback">
+                                    Insira somente números.
+                                </div>
                                 <input type="button" class="btn" value="Procurar" for="cep" id="cepBtn">
                             </div>
-                           
-                               
+
+
                         </div>
-                        
+
                         <div class="col-5 col-sm-6 col-md-6 col-lg-6  d-flex flex-column inputP">
                             <label for="uf" class="form-label">Estado</label>
                             <input type="text" class="form-control" id="uf" readonly>
@@ -158,7 +163,7 @@
         <div class="container">
             <div class="rodape">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-3">
                         <div class="edita-rodape">
                             <ul class="links">
                                 <ul>
@@ -230,7 +235,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div>
+                    <div >
                         <p class="lingua col-lg-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
                                 class="bi bi-globe" viewBox="0 0 16 16">

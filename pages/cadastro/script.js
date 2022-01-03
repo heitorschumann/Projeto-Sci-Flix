@@ -1,9 +1,15 @@
-//requisição e autocomplete 
+var nomeUser = $('#nomeUser').val()
+var sobrenomeUser = $('#sobrenomeUser').val()
+var emailUser = $('#emailUser').val()
+var senhaUser = $('#senhaUser').val()
+
+
+//requisição e autocomplete
 
 $("#cepBtn").on("click", function(){
     var cep = $("#cep").val()
     const url = `https://viacep.com.br/ws/${cep}/json/`
-
+    
     $.ajax({
         url: url,
         type: 'GET',
@@ -12,7 +18,11 @@ $("#cepBtn").on("click", function(){
             $('#uf').val(dados.uf)
             $('#cidade').val(dados.localidade)
             $('#bairro').val(dados.bairro)
-            $('#rua').val(dados.logradouro)
+            $('#rua').val(dados.logradouro)   
+                      
+        },
+        error: function(){
+            $("#cep").attr('class', 'form-control is-invalid')
         }
     })
 })
