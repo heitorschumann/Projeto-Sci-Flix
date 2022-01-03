@@ -55,27 +55,35 @@
 
                     <div class="col-10 inputP">
                         <label for="nomeUser" class="form-label">Primeiro Nome</label>
-                        <input type="text" class="form-control is-valid" id="nomeUser" placeholder="Nome" required />
-                        <div class="valid-feedback">Ok!</div>
+                        <input type="text" class="form-control " id="nomeUser" placeholder="Nome" required />
+                        
                     </div>
                     <div class="col-10 inputP">
                         <label for="sobrenomeUser" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control is-valid" id="sobrenomeUser" placeholder="Sobrenome"
+                        <input type="text" class="form-control " id="sobrenomeUser" placeholder="Sobrenome"
                             required />
-                        <div class="valid-feedback">Ok!</div>
+                        
                     </div>
                     <div class="col-10 inputP">
                         <label for="emailUser" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="emailUser" placeholder="usuario@email.com">
+                        <input type="email" id="emailUser" class="form-control" id="emailUser" placeholder="usuario@email.com" onchange="validaEmail(this.value)">
+                        
                     </div>
                     <div class="col-10 inputP">
                         <label for="senhaUser" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="senhaUser">
+                        <input type="password" class="form-control" id="senhaUser"  onchange="validaSenha(this.value)">
+                        <div class="invalid-feedback">
+                            Sua senha precisa conter: 8 a 20 caracteres, caracteres maiúsculos e minúsculos, caracteres especiais e pelo menos um número.
+                        </div>
                     </div>
                     <div class="col-10 inputP">
                         <label for="senhaCheck" class="form-label">Confirme sua senha</label>
-                        <input type="password" class="form-control" id="senhaCheck">
+                        <input type="password" class="form-control" id="senhaCheck" onchange="validaSenhaCheck(this.value)">
+                        <div class="invalid-feedback">
+                            As senhas não são iguais, por favor digite novamente.
+                        </div>
                     </div>
+                   
                     <div class="adress d-flex align-content-start flex-wrap">
                         <div class="col-10 d-flex flex-column inputP">
                             <label for="rg" class="form-label">RG</label>
