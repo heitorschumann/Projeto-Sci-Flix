@@ -1,0 +1,56 @@
+@import url('http://fonts.cdnfonts.com/css/avalors-personal-use');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+main {
+    margin-top: 20px;
+}
+
+a{
+    color: white;
+}
+.bg-color {
+    background: #21004b;
+}
+.caixa {
+    padding: 0;
+    height: auto;
+    margin-bottom: 50px;
+}
+.borda {
+    border: 2px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.letras-destaque {
+    color: #FF00F4 ;
+    font-family: 'Avalors Personal Use', sans-serif;
+    padding-left: 5%;
+    font-size: 27px;
+}
+p {
+    font-size: 17px;
+    margin-left: 2%;
+}
+.letras-label, .letras-label label{
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+}
+.adress {
+    padding-top: 3%;
+}
+.checkBox {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.registra-btn{
+    background: #001DAB ;
+    border: 2px solid #C900F4;
+}
+.inputP {
+    padding: 3px;
+}
+#cepBtn {
+    color: white;
+    background: blue;
+    margin-left: 2%;
+}
