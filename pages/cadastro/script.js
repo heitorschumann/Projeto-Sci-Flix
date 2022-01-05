@@ -3,7 +3,7 @@ let sobrenomeUser
 let emailUser
 let senhaUser
 
-//requisição e autocomplete
+//requisição API ViaCEP e autocomplete dos inputs
 
 $("#cepBtn").on("click", function () {
     const cep = $("#cep").val()
@@ -13,7 +13,6 @@ $("#cepBtn").on("click", function () {
         url: url,
         type: 'GET',
         success: function (dados) {
-            console.log(dados)
             $('#uf').val(dados.uf)
             $('#cidade').val(dados.localidade)
             $('#bairro').val(dados.bairro)
@@ -27,7 +26,7 @@ $("#cepBtn").on("click", function () {
 })
 
 
-// verificação de dados  
+// verificação dos inputs   
 
 
 function validaEmail(email) {
@@ -42,8 +41,8 @@ function validaEmail(email) {
 }
 
 function validaSenha(senha) {
-    //caracteres maiúsculos e minúsculos, caracteres especiais, números e 8 a 20 caracteres
-    const crcS = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,20}$/
+    //caracteres maiúsculos e minúsculos, caracteres especiais, números e 6 a 20 caracteres
+    const crcS = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,20}$/  
     crcS.test(senha)
 
     if (crcS.test(senha) === true) {
@@ -55,6 +54,7 @@ function validaSenha(senha) {
 
 }
 
+
 function validaSenhaCheck(senhaC) {
     if ($('#senhaUser').val() == $('#senhaCheck').val()) {
         $("#senhaCheck").attr('class', 'form-control is-valid')
@@ -63,24 +63,27 @@ function validaSenhaCheck(senhaC) {
     }
 }
 
-///armazenamento de dados
+/// tentativa de fazer um "mini armazenamento de dados"
+ document.getElementById("botao").addEventListener("click", function(event){
+    event.preventDefault() })
 
-function registrarDados() {
+
+    function registrarDados() {
     
-    nomeUser = $('#nomeUser').val()
-    sobrenomeUser = $('#sobrenomeUser').val()
-    emailUser = $('#emailUser').val()
-    senhaUser = $('#senhaUser').val()
-    const dadosUsuario = {
-        'nome': nomeUser,
-        'sobrenome': sobrenomeUser,
-        'email': emailUser,
-        'senha': senhaUser,
-        'cep': cep
+        nomeUser = $('#nomeUser').val()
+        sobrenomeUser = $('#sobrenomeUser').val()
+        emailUser = $('#emailUser').val()
+        senhaUser = $('#senhaUser').val()
+        const dadosUsuario = {
+            'nome': nomeUser,
+            'sobrenome': sobrenomeUser,
+            'email': emailUser,
+            'senha': senhaUser
+        }
+        const stringDados = JSON.stringify(dadosUsuario)
+        localStorage.setItem('dadosString', stringDados)
+        console.log(localStorage.getItem('dadosString')) //testando o retorno dos dados
+        return window.location.href='../../index.html'
     }
-    const stringDados = JSON.stringify(dadosUsuario)
-    localStorage.setItem('dadosString', stringDados)
-    console.log(localStorage.getItem('dadosString'))
-}
 
 
