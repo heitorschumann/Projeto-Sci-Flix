@@ -63,8 +63,10 @@ function validaSenhaCheck(senhaC) {
     }
 }
 
-///armazenamento de dados 
+///armazenamento de dados
+
 function registrarDados() {
+    
     nomeUser = $('#nomeUser').val()
     sobrenomeUser = $('#sobrenomeUser').val()
     emailUser = $('#emailUser').val()
@@ -80,4 +82,5 @@ function registrarDados() {
     localStorage.setItem('dadosString', stringDados)
     console.log(localStorage.getItem('dadosString'))
 }
+
 
